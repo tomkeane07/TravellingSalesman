@@ -236,9 +236,25 @@ public class travelingSalesman{
 
       static ArrayList<Destination> queue;
       public static void main(String[] args){
-        q = 2.7;
-        t = 9;
-          TR(88, 0.09);
+        for(int x = 88; x< 98; x++){
+          System.out.print(x+",");
+
+          
+          for(int yy = 1; yy< 60; yy++){
+            if(yy%20==0)System.out.print(".");
+            z = yy*0.01;
+            for(qq = 1; qq< 60; qq++){
+              if(qq%20==0)System.out.print("|");
+              q = qq*0.1;
+              for(t=-5;t<31;t++){
+                TR(x,z);
+              }
+            }
+          }
+        }
+        //TR(85, 2.81);
+
+
       }
 
 
